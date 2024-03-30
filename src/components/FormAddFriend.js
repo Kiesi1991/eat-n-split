@@ -16,10 +16,10 @@ export function FormAddFriend({ onAddFriend }) {
       balance: 0,
       id: randomId,
     };
-    console.log(newFriend);
+
+    onAddFriend(newFriend);
     setName("");
     setImage("https://i.pravatar.cc/48");
-    onAddFriend(newFriend);
   }
 
   return (
